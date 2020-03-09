@@ -25,7 +25,7 @@ const sequelize = new Sequelize(db_name, db_user, db_password, {
 });
 
 let models = [
-
+    require('./models/distribution_data_directories.js'),
 ];
 
 // Initialize models

@@ -1,19 +1,37 @@
-# Distribution
+# Distribution-0.0.1
 
 ## data upload-download
 
-as more as to quote the base data
+### DataDistribution
 
-compress-decompress
+#### distribution_data_directory
+
+| code           | description         | type      | constraint                                              |
+| -------------- | ------------------- | --------- | ------------------------------------------------------- |
+| id             | primary key/version | int       | primary_key, auto_increment                             |
+| pid            | parent id           | int       | value by id                                             |
+| name           | name                | varchar   | 100                                                     |
+| description    | description         | varchar   | 256                                                     |
+| manual_version | manual version      | varchar   | 50                                                      |
+| create_time    | create time         | timestamp | not null, current_timestamp                             |
+| update_time    | update time         | timestamp | not null, current_timestamp on update current_timestamp |
+
+#### DataStructure
+
+
+
+#### Data
+
+
+
+#### DataTrigger-Subscriber
 
 
 
 
+
+# Subsequent Release
 
 ## account certified authenticate
-
-
-
-
 
 ## private deploy base the public vesion

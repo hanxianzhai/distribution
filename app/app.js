@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 const server = new ApolloServer({
     modules: [
-
+        require('./GraphQL/distribution_data_directories'),
     ],
 });
 
