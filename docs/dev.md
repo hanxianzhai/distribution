@@ -6,4 +6,5 @@ add the data model:
 3. sequelize-auto -h 192.168.121.130 -d openlaas -u openlaas -x openlaas123 -p 3306  --dialect mysql -c D:\\projects\\github\\openlaas\\distribution\\docs\\sequelize-auto-settings.json -o D:\\projects\\github\\openlaas\\distribution\\app\\models
 
 
-
+how to use graphql?
+please visit the url: https://graphql.cn/learn

@@ -16,17 +16,19 @@
 | create_time    | create time         | timestamp | not null, current_timestamp                             |
 | update_time    | update time         | timestamp | not null, current_timestamp on update current_timestamp |
 
-#### DataStructure
+#### distribution_data_structure
 
 
 
-#### Data
+#### distribution_data
 
 
 
-#### DataTrigger-Subscriber
+#### distribution_data_trigger
 
 
+
+#### distribution_data_subscriber
 
 
 
