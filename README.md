@@ -1,10 +1,10 @@
-# Distribution-0.0.1
+[English](README.md) | [中文](README_zh_CN.md)
 
-## data upload-download
+# Distribution
 
-### DataDistribution
+## DataDistribution
 
-#### distribution_data_directory
+### distribution_data_directory
 
 | code           | description         | type      | constraint                                              |
 | -------------- | ------------------- | --------- | ------------------------------------------------------- |
@@ -16,24 +16,18 @@
 | create_time    | create time         | timestamp | not null, current_timestamp                             |
 | update_time    | update time         | timestamp | not null, current_timestamp on update current_timestamp |
 
-#### distribution_data_structure
+### distribution_data_structure
 
 
 
-#### distribution_data
+### distribution_data
 
 
 
-#### distribution_data_trigger
+### distribution_data_trigger
 
 
 
-#### distribution_data_subscriber
+### distribution_data_subscriber
 
-
-
-# Subsequent Release
-
-## account certified authenticate
-
-## private deploy base the public vesion
+## FileDistribution
