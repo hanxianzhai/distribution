@@ -8,7 +8,7 @@ const db_password = "openlaas123";
 
 
 const sequelize = new Sequelize(db_name, db_user, db_password, {
-    host: '192.168.121.130',
+    host: '192.168.121.133',
     port: '3306',
     dialect: 'mysql',
     define: {
@@ -25,7 +25,7 @@ const sequelize = new Sequelize(db_name, db_user, db_password, {
 });
 
 let models = [
-    require('./models/distribution_data_directories.js'),
+    require('./models/designer_data_directories.js'),
 ];
 
 // Initialize models
