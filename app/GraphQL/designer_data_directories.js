@@ -10,7 +10,7 @@ export const typeDefs = gql`
     type Designer_data_directory {
         id: ID!
         pid: Int
-        code: String
+        name: String
         desc: String
     }
 `;
