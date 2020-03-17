@@ -15,7 +15,8 @@ if not db_pool:
         'database': config_mysql["db"],
         'user': config_mysql["username"],
         'password': config_mysql["password"],
-        'charset': config_mysql["charset"]
+        'charset': config_mysql["charset"],
+        "cursorclass": pymysql.cursors.DictCursor
     }
     mymysql.db_pool = PersistentDB(pymysql, **config)
 
