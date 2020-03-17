@@ -1,0 +1,9 @@
+server:
+  port: 5000
+mysql:
+  host: 192.168.121.133
+  port: 3306
+  db: laashub
+  username: laashub
+  password: laashub123
+  charset: utf8mb4

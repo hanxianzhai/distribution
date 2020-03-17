@@ -19,9 +19,9 @@ docker run --name  mymysql -p 3306:3306 --restart=always --privileged=true \
     -v /data/tristan/mysql/data:/var/lib/mysql \
     -e TZ=Asia/Shanghai \
     -e MYSQL_ROOT_PASSWORD=tristan123 \
-    -e MYSQL_DATABASE=openlaas \
-    -e MYSQL_USER=openlaas \
-    -e MYSQL_PASSWORD=openlaas123 \
+    -e MYSQL_DATABASE=laashub \
+    -e MYSQL_USER=laashub \
+    -e MYSQL_PASSWORD=laashub123 \
     -d mysql:5.7  \
     --character-set-server=utf8mb4  \
     --collation-server=utf8mb4_unicode_ci
