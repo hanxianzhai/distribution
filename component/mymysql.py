@@ -26,12 +26,17 @@ def execute(sql):
         conn = mymysql.db_pool.connection()
         cursor = conn.cursor()
         cursor.execute(sql)
-        execute_result = cursor.fetchall()
+        # consider it INSERT or other
+        if sql.strip().upper().startswith("INSERT"):
+            execute_result = cursor.lastrowid
+        else:
+            execute_result = cursor.fetchall()
         conn.commit()
-        cursor.close()
-        conn.close()
     except Exception as e:
         raise MyServiceException("execute sql error" + str(e))
+    finally:
+        cursor.close()
+        conn.close()
     return execute_result
 
 # if __name__ == '__main__':
